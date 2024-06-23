@@ -859,7 +859,6 @@ def fring_fdamp(eta, eta2, chi1, chi2):
 
 def phenom_d_inspiral_phase(Mf, mass_1, mass_2, eta, eta2, xi, chi1, chi2):
     ins_phasing, ins_Dphasing = taylorf2_phase(Mf, mass_1, mass_2, chi1, chi2)
-    print(ins_phasing[0][0].item())
     sigma1 = sigma1Fit(eta, eta2, xi)
     sigma2 = sigma2Fit(eta, eta2, xi)
     sigma3 = sigma3Fit(eta, eta2, xi)
