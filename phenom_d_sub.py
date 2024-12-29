@@ -1172,9 +1172,9 @@ def phenom_d_int_amp(Mf, eta, eta2, Seta, chi1, chi2, chi12, chi22, xi):
     delta_0, delta_1, delta_2, delta_3, delta_4 = delta_values(
         f1=Mf1, f2=Mf2, f3=Mf3, v1=v1, v2=v2, v3=v3, d1=d1, d2=d2
     )
-
     amp = delta_0 + Mf * delta_1 + Mf**2 * (delta_2 + Mf * delta_3 + Mf**2 * delta_4)
     Damp = delta_1 + Mf * (2 * delta_2 + 3 * Mf * delta_3 + 4 * Mf**2 * delta_4)
+    breakpoint()
     return amp, Damp
 
 
